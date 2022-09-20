@@ -1,4 +1,4 @@
-# Starter Workbook
+# lab and assignments repo
 
 ## Robbie Schneider
 
