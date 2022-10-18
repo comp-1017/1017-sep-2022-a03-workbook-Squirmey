@@ -120,33 +120,11 @@ NOte the list does NOT use a seperating comma
     background-color: #f4f4f4;
     margin-left: 24px;
 }
-<<<<<<< HEAD
-
-/********************
-not all html element have pre-coded pseudo classes.
-The anchor tag has 4 pre-coded pseudo classes.
-The order in whih the anhor tag pseudo classes are
-specified within your css is important
-When you overried the pseudo class, you are overwriding the defaults of the class.
-order:
-a:link unsed anchor link
-a.hover used when your cursor over the anchor
-a.visited used after you have gone to the anchor link
-a.active used when you are clicking the anchor link
-*********************/
-
-footer a:hover{
-    font-size: larger;
-    color: yellow;
-    
-}
-=======
 h2{
     padding: 48px;
     color: #238
 }
-ul{
+::selection ul{
     padding: 48px;
     color: #238
 }
->>>>>>> 06e408a882339d45a01a0c5b697c1ffc291d511c
