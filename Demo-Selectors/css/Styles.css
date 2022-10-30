@@ -68,6 +68,7 @@ The descendant selector has 2 or more element selectors.
 footer {
     padding: 48px;
     background-color: #dddddd;
+
 }
 
 /********************
@@ -124,7 +125,7 @@ h2{
     padding: 48px;
     color: #238
 }
-ul{
+ section ul{
     padding: 48px;
-    color: #238
+    color: #111
 }
