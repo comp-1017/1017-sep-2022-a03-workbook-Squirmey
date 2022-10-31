@@ -34,3 +34,14 @@ body {
 .clearfix {
     *zoom: 1;
 }
+main{
+    background-color: lightgray;
+}
+
+.red-paint{
+    height: 30px;
+}
+
+.blue-paint{
+    height: 300px;
+}
