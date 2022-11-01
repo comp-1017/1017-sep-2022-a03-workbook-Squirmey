@@ -66,10 +66,6 @@ To invoke flexbox use the rule:
 }
 
 .blue-paint{
-    border-bottom: 2px;
-    border-top: 2px;
-    border-left: 2px;
-    border-right: 2px;
     height: 300px;
     width: 435px;
     background-color: blue;
