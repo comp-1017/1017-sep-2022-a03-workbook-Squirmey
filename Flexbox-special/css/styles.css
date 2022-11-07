@@ -1,0 +1,76 @@
+body {
+	background-color: white;
+}
+
+.container {
+	display:flex;
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+main{
+	background-color: lightgray;
+	border: 2px solid black;
+	display: flex;	
+	flex-wrap: wrap;
+}
+.aside-size{
+	margin: 10px 0px 10px 10px;
+	width: 150px;
+	height: 600px;
+	border: 2px solid black;
+}
+/*****************************
+the margin of 10px between the boxes
+for red,green and blue
+border of 2px around from the boxes and main
+
+calculations of width for blue and green: 
+red given as 150px
+960 = column1 + column2 + right margin/main borders
+960 = LM + LB + LP + content + rP + RB + RM + column2
+LM + LB + LP + content + rP + RB + RM + column2 +10 +4
+960 = (LM10 + 2 + 0 +150 + 0 + 2 + 0) + (10 + 2 + 0 + content +0 +2 +0 +14
+960 = 192 + content
+960 - 192 = content = 763
+763 = content
+
+600 = tb + tp  + content + bp + bb + veticalMargin
+thisonly works because the content area is the same and the content area height is the same
+and the vertical margin is the same.
+600= 2* b + M + c +10
+600 = 2(4 + 10 +2 * my content)
+600 = 18 + 2 * content
+582/2
+291 = content height.
+
+****************************/
+.ContentSize{
+	margin: 10px 0px 10px 10px;
+	width: 768px;
+
+	height: 291px;
+}
+.blue-paint{
+	background-color: blue;
+	border:  solid black;
+	height: 300px;
+	width: 730px;
+	margin: 5px 5px 5px 5px;
+	padding: 5px;
+}
+.green-paint{
+	background-color: green;
+	border: solid black;
+	height: 300px;
+	width: 730px;
+	margin: 5px 5px 5px 5px;
+	padding: 5px;
+}
+.red-paint{
+	background: red;
+	border: 2px solid black;
+	
+}
