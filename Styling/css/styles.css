@@ -7,4 +7,48 @@ body {
 	width:960px;
 	font-size: 100%;
 	line-height: 1.5;
+	text-align: center;
+	background-color: lightgray;
+	border: 2px solid blue;
+}
+P{
+	font-size: 16px;
+	color: #91909c;
+	margin-bottom: 12px;
+}
+h1{
+	font-size: 96px;
+	color: black;
+	margin-top: 48px;
+	font-family: 'Vesper Libre', serif;
+	font-weight: 700;
+}
+h2{
+	font-size: 48px;
+	padding: 24px;
+	margin-bottom: 12px;
+	font-family: 'Vesper Libre', serif;
+	font-weight: 400;
+}
+h3{
+	font-size: 24px;
+	color: #84696f;
+	margin-bottom: 24px;
+	font-family: 'Vesper Libre', serif;
+	font-weight: 400;
+}
+footer header{
+	font-size: 14px;
+
+}
+body{
+	color: #3e3e44;
+
+}
+img{
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+footer{
+	margin-top: 48px;
 }
