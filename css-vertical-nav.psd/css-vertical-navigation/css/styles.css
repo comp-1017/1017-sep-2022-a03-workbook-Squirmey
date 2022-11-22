@@ -73,5 +73,5 @@ visited if the link has been used.
 }
 
 .banner li{
-	line-height: 40px; /* instead of using m argins to seperate the li items, you can use the rule line-height*/
+	line-height: 40px; /* instead of using margins to seperate the li items, you can use the rule line-height*/
 }
