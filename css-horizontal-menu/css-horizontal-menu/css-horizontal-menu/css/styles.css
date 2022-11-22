@@ -62,3 +62,80 @@ header nav{
 header nav a:hover{
 	border-bottom: 2px solid #abddd5;
 }
+
+/***************************************
+	main
+	**********************************/
+	/*general banner class setup*/
+	.banner{
+		display: flex;
+		background-image: url(../img/island-bg.jpg);
+		font-size: 18px;
+	}
+
+/* left column  total width: 578px
+	to center the content,pad within the column.
+	780= 2*82 +content 
+	578-164= content.
+	414 = widh of content. */
+.banner .left-column{
+	width: 414px;
+	padding: 85px 82px 0px 82px;
+	text-align: center;
+}
+
+.banner .left-column h2{
+	margin-bottom: 32px;
+	font-size: 26px;
+	font-family: 'Alegreya', serif;
+	
+}
+
+.banner .bar{
+	width: 414px;
+	height: 8px;
+	background-color: #028568;
+	margin-bottom: 36px;
+}
+
+
+/* right column total width: 384px*/
+
+.banner .right-column{
+	width: 218px;
+	text-align: center;
+	padding: 85px 83px 0px 83px;
+	background-color: rgba(171, 221, 213,0.8);
+}
+
+.banner .right-column h2{
+	line-height: 44px;
+	font-size: 36px;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 32px;
+
+
+
+}
+/* how to style an anchor tag link to look like a button */
+.banner a{
+	padding: 9px 38px;
+	margin-bottom: 65px;
+	display: inline-block; /* this changes how the element is handled for display
+									the default of the anchor tag is inline. the margin
+									has no effecct against an inline element.
+									have the browser handle the tag as a "block" */
+	text-decoration: none;
+	text-align: center;
+	background-color: #ffffff;
+	color: #028568;
+	border-radius: 8px;
+}
+
+/*draw attention to the link when you hover over it */
+.banner a:hover{
+	padding: 9px 38px 9px 38px;
+	font-weight: bold;
+	background-color: azure;
+	font-size: larger;
+}
