@@ -1,0 +1,110 @@
+footer{
+    background-color: #333;
+    color: yellow;
+}
+
+/******************
+Make a specific class with your css rule.
+************************/
+/***********
+.nav-background{
+    background-color:#ddd;
+}
+*/
+ul{
+    background-color: rgb(218, 15, 15);
+}
+/********************
+descendent selector
+********************/
+
+nav ul{
+    background-color: #ddd;
+}
+
+/**********************************
+specificity
+it is a value assigned to the selector meating 
+different chriteria
+
+Selecctor type
+Element selectors get a value of 1
+Class selectors Gets a value of 10
+ID selectors get a value of 100
+Special Note: all in line styling gets a value of 1000
+
+Specificity decisions are based on the Value of the selector
+
+If the specificity of conflicting rules is the same
+Then "the last coded rule wins"
+************************************/
+footer, 
+footer a{
+    color: #ddd;
+}
+/*************************************************
+
+first set element selector li to a border bottom
+
+concern: both the border and li were affected
+
+Solutions: 
+a) use a descendent selector(nav li is greater than li
+b) use a class selector (li-border is greather than li. 10>1
+This is referred to as a targeted class.
+****************************************************/
+.li-border{
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    border-bottom: 5px dotted #333;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+/*************************
+classes: 
+syntax is .username(rules)
+you are  not to use element name
+user name must be meaningful and may include the element name.
+classes can be attatched to any element
+classes are independent of an element
+on html page, to use: <element class="username"( username2....)
+
+types: user (targeted) class
+Pseudo classes, these re attatched to elements
+
+Example: anchor tag
+Note: the order in which you code your pseudo classes for the anchor tag
+is EXTREMELY IMPORTANT.
+a.link      unused link
+a.hover     used when your cursor hovers over the anchor tag link
+a: visited: used when the anchor tag link has been clicked on previously
+a.active    is used when you are actually clicking on the anchor tag
+********************************************************/
+
+nav ul li a.visited{
+    color: green;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav ul li a.hover{
+    color: blue;
+}
+
+nav ul li a.active{
+    color: red;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 8px;
+}
+footer ul li{
+    padding: 10px;
+}

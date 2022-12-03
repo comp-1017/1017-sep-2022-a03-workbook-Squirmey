@@ -1,0 +1,69 @@
+body{
+	background-color: white;
+}
+
+.container{
+	margin:0 auto;
+	width:960px;
+	font-size: 100%;
+	line-height: 1.5;
+	background-color: white;
+}
+
+/********************************************
+	typography(module3)
+	affects the styling of text
+*********************************************/
+h1,
+h2{
+	padding: 10px;
+	text-align: center;
+	font-family: arial,sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #747474;
+}
+/********************************************
+	layout
+	these rules will affect the physical positioniong
+	of elements they to wich they are applied
+	****************************************/
+nav{
+	margin-top: 48px;
+	background-color: #ddd;
+}
+
+header,
+main{
+	height: 480px;
+	margin-top: 24px;
+	background-color: #ddd;
+}
+
+main{
+	height: 800px;
+}
+
+footer{
+	height: 480px;
+	margin: 24px 0 48px 0;
+	background-color: #ddd;
+}
+
+/********************************
+what is the required width of section
+
+box model practice.
+page width = LM+LB+LP+content width+RP+RB+RM
+LM= leftMargin. LB=LeftBorder LP=leftpading Rb=RightBorder. RM=RightMargin RP=Rightpadding
+960= 30+2+0+content+0+2+30
+960=width+64
+896
+*********************************/
+
+main section{
+	border: 2px solid black;
+	margin: 30px;
+	height: 200px;
+	background-color: white;
+}

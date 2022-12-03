@@ -1,0 +1,105 @@
+body {
+    background: rgba(0, 0, 0, 0.01);
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    font-size: 100%;
+    line-height: 1.5
+}
+
+
+/*CLEAR FIX SOLLUTION*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ flexbox with affect our positioning that is our normal within your page. such as margin collapse.
+
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+main{
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*********************************************
+
+the default display of element on your page is called stacked
+to get your elements on the same line reuse something called flexbox.
+To invoke flexbox use the rule: 
+
+    Display: flex;
+
+    flex box attempts to place all elements within its immidate specififed container area
+    on the same line
+
+    ?immediate. that is the next level of elements.
+    
+    flexbox will automaticly adjust measurements to get all elements to appear on the same line.
+    regardless of the physical width set for the element.
+
+*********************************************/
+.red-paint{
+    height: 300px;
+    width: 435px;
+    background-color: red;
+    margin: 30px 0px 30px 30px;
+}
+
+.blue-paint{
+    height: 300px;
+    width: 435px;
+    background-color: blue;
+    margin: 30px 0px 30px 30px;
+}
+
+.black-paint{
+    height: 50px;
+    width: 900px;
+    background-color: black;
+    margin:0px 30px 30px;
+}
+footer{
+    background-color: lightgray;
+    height: 60px;
+    display:flex
+}
+/************************************
+give the classes height and width. due to the fact that the element due not contain any textual content.
+Set height to a chosen value of 300px
+set the width of each box to fit the final given image.
+Margin: 30px
+padding and border are = to 0
+page width is 960px.
+
+page width is equal to n(representing the columns.)  x(the box) + the remainder.
+960 is = n(2 columns) X the box)
+page width =(box) + box + remainder.
+out boxes are of an equal size
+if hey arent of equal you have to add each box seperatly.
+left margin + left padding + LeftBOrder + left padding + content + right padding + rightMargin+ rightBorder + remainder.
+960 = 2 x 30 + 0 + 0 +contennt + 0 +0 + 0 +0 + remainder(30)
+60+30+2(content)
+960 - 90 = content. = 870/2 =435 is content
+width 435 px
+height 435px
+********************************/
